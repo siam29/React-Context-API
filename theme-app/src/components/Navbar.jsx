@@ -1,5 +1,9 @@
 import { useTheme } from '../context/ThemeContext';
 import { Button } from './Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export const Navbar = () => {
   const { colors, toggleTheme, isDarkTheme } = useTheme();
@@ -18,7 +22,7 @@ export const Navbar = () => {
       }}>
         <h1>Theme Demo</h1>
         <Button onClick={toggleTheme}>
-          Switch to {isDarkTheme ? 'Light' : 'Dark'} Theme
+           {isDarkTheme ? <FontAwesomeIcon icon={faSun} style={{ marginRight: '8px' }} /> : <FontAwesomeIcon icon={faMoon} style={{ marginRight: '8px' }} />} 
         </Button>
       </div>
     </nav>

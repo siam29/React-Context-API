@@ -7,12 +7,11 @@ export const Button = ({ onClick, children }) => {
     <button 
       onClick={onClick}
       style={{ 
-        backgroundColor: colors.primary,
-        color: colors.text,
-        padding: '8px 16px',
-        borderRadius: '4px',
+        padding: '16px 16px',
+        borderRadius: '100%',
         border: 'none',
         cursor: 'pointer'
+        
       }}
     >
       {children}
