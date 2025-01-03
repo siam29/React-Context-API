@@ -19,8 +19,8 @@ const MainContent = () => {
           content="This is a demonstration of theme switching using React Context API. Try switching between light and dark themes!"
         />
         <Card 
-          title="How it works"
-          content="We use React's Context API to manage theme state globally. The theme provider wraps the app and makes theme values available to all components."
+          title="W3 Intern Software Engineer"
+          content="Al Mahmud Siam"
         />
       </div>
     </div>
